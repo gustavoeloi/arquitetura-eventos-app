@@ -1,0 +1,23 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Componente B - vai emitir o evento</mat-card-title>
+    <mat-card-subtitle>Emissor do Evento</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://pm1.aminoapps.com/6995/8cac9a3bd39487d8e052fef8bf6f3fc2afdaa314r1-1125-873v2_hq.jpg"
+    alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p style="padding: 16px;">
+      Esse componente está responsável por emitir o evento que será capturado pelo componente A.
+      atráves do EventEmitter do Service.
+    </p>
+    <mat-form-field>
+      <input matInput [(ngModel)]="textoParaEnviar" placeholder="Enviar texto">
+    </mat-form-field>
+
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button (click)="emitirEvento(textoParaEnviar)" mat-raised-button color="primary">Emitir
+      Evento</button>
+  </mat-card-actions>
+</mat-card>

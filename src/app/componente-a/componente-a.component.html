@@ -1,0 +1,12 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Componente A - vai receber o evento</mat-card-title>
+    <mat-card-subtitle>Receber Evento</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image *ngIf="message"
+    src="https://www.looper.com/img/gallery/the-best-time-dwight-schrute-ever-broke-character-on-the-office/intro-1620063081.jpg"
+    alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p class="texto-recebido">{{ message }}</p>
+  </mat-card-content>
+</mat-card>
